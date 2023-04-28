@@ -5,20 +5,20 @@
 int main()
 {
 
-    forward_list<int> stack;
+    forward_list<int> Stack;
 
     for (size_t i = 0; i < 1000000; i++)
     {
-        stack.push_front(i); 
+        Stack.push_front(i); 
     }
 
-    if(!stack.empty())
+    if(!Stack.empty())
     {
-        std::cout << "Top element = " << stack.begin()->data << '\n';
+        std::cout << "Top element = " << Stack.begin()->data << '\n';
     }
 
     /* 
-    for(auto node = stack.begin(); node != nullptr; node = node->next)
+    for(auto node = Stack.begin(); node != nullptr; node = node->next)
     {
         std::cout << node->data << ' ';  
     } 
