@@ -81,7 +81,7 @@ public:
 
 
     /**
-      *  Returns a read/write iterator that points to the first element
+      *  Returns a read/write iterator that points to the first node
       *  in the %forward_list.
       */
     node *begin(void)
@@ -91,7 +91,7 @@ public:
 
 
     /**
-      *  Returns a read-only iterator that points to the first element
+      *  Returns a read-only iterator that points to the first node
       *  in the %forward_list.
       */
     const node *begin(void) const
