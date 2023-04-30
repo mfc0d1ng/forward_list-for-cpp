@@ -27,7 +27,7 @@ public:
     }
     
     /* Destructor. */
-    ~forward_list(){ }
+    ~forward_list(){}
 
     
     /* Add data to the front of the %forward_list. */
