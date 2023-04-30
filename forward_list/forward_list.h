@@ -36,8 +36,8 @@ public:
         node *new_node = (node *) std::malloc(sizeof(node)); 
         if(!new_node)
         {
-            puts("Out of memory...program terminated.");
-            exit(EXIT_FAILURE); 
+            std::puts("Out of memory...program terminated.");
+            std::exit(EXIT_FAILURE); 
         }
         new_node->data = data;
         new_node->next = head;
@@ -51,7 +51,7 @@ public:
     {
         if(!head)
         {
-            puts("List is empty.");
+            std::puts("List is empty.");
             return;
         }
         node *tmp = head;
@@ -65,6 +65,7 @@ public:
     {
         if(!head)
         {
+            std::puts("List is empty.");
             return;
         }
         node *prev = NULL;
@@ -142,7 +143,7 @@ public:
     {
         if(!head)
         {
-            puts("List is empty."); 
+            std::puts("List is empty."); 
             return;
         }
         node *tmp = NULL;
@@ -150,7 +151,7 @@ public:
         {
             tmp = it;
             it = it->next; 
-            free(tmp);
+            std::free((void *) tmp);
         }
         head = NULL;  
     }
