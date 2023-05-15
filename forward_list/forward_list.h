@@ -155,7 +155,6 @@ public:
         }
         head = NULL;  
     }
-
 };
 
 #endif
